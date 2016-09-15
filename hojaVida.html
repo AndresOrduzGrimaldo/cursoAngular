@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hoja de Vida</title>
+	<link rel ="stylesheet" type ="text/css" href="bootstrap.min.css">
+
+	<script type="text/javascript" src = "angular.min.js"></script>
+	<script type="text/javascript" src ="js/appHojaVida.js"></script>
+	<script type="text/javascript" src ="js/controllers/hojaVidaController.js"></script>
+</head>
+<body ng-app = "hojaVida">
+	<h1>Hola a todos</h1>
+	<div ng-controller = "hojaVidaController as hv">
+		Variable primerNombre: {{hv.Andres.primerNombre}} <br>
+		Variable segundoNombre: {{hv.Andres.segundoNombre}}<br>
+		Variable primerApellido: {{hv.Andres.primerApellido}}<br>
+		Variable segundoApellido: {{hv.Andres.segundoApellido}}<br>
+		Variable edad: {{hv.Andres.edad}}<br>
+		Variable documentoIdentidad: {{hv.Andres.documentoIdentidad}}<br>
+		Variable fechaNacimiento: {{hv.Andres.fechaNacimiento}}<br>
+		Variable estadoCivil: {{hv.Andres.estadoCivil}}<br>
+		Variable direccion: {{hv.Andres.direccion}}<br>
+		Variable telefono: {{hv.Andres.telefono}}<br>
+		Variable email: {{hv.Andres.email}}<br>
+		Variable estudioPrimaria: {{hv.Andres.estudioPrimaria}}<br>
+		Variable estudioSecundaria: {{hv.Andres.estudioSecundaria}}<br>
+
+	</div>
+</body>
+</html>
